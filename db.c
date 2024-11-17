@@ -18,7 +18,9 @@ InputBuffer* new_input_buffer() {
   return input_buffer;
 }
 
-void print_prompt() { printf("db > "); }
+void print_prompt() {
+  printf("db > ");
+}
 
 void read_input(InputBuffer* input_buffer) {
   ssize_t bytes_read =
@@ -35,8 +37,8 @@ void read_input(InputBuffer* input_buffer) {
 }
 
 void close_input_buffer(InputBuffer* input_buffer) {
-    free(input_buffer->buffer);
-    free(input_buffer);
+  free(input_buffer->buffer);
+  free(input_buffer);
 }
 
 int main(int argc, char* argv[]) {
