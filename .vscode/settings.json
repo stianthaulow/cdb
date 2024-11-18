@@ -1,6 +1,10 @@
 {
-  "files.associations": {
-    "stdio.h": "c"
-  },
-  "makefile.configureOnOpen": true
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.c$",
+        "cmd": "make"
+      }
+    ]
+  }
 }
